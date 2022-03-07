@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <section class="left_column">
+            <div class="image-container">
+                <img class="bg_image" src="/src/bg-image.jpg" alt="ocean picture" max-height: 500px>
+                <div class="logo-bg">
+                    <img src="/src/odin-logo.png" alt="odin logo">
+                </div>
+            </div>
+        </section>
+
+        <section class="right_column">
+            <div class="form-container">
+                <div class="description-container">
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur laborum at modi amet porro nesciunt, saepe praesentium dicta, aspernatur, quisquam nihil a dignissimos qui ea quos ex sunt natus eveniet?</p>
+                    <p> You know you want to.</p>
+                </div>
+    
+                <section>
+                    <form action="https://www.google.com/" method="post">
+                        <h1>Let's do this!!</h1>
+                        <ul>
+                            <li>
+                                <label for="first-name">First Name</label>
+                                <input type="text" name="first-name" id="user_first_name">
+                                <label for="last_name">Last Name</label>
+                                <input type="text" name="last_name" id="user_last_name">
+                            </li>
+                            <li>
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="user_emal">
+                                <label for="phone_number">Phone Number</label>
+                                <input type="number" name="phone_number" id="user_phone_number">
+                            </li>
+                            <li>
+                                <label for="password">Password</label>
+                                <input type="password" name="password" id="user_password" required>
+                                <label for="password_confirmation">Confirm Password</label>
+                                <input type="password" name="password_confirmation" id="user_password_confirmation" required>
+                            </li>
+                        </ul>
+                    </form>
+                </section>
+            
+            </div>
+    
+            <button>Create Account</button>
+            <p>Already have an account? <a href="https://www.google.com/" target="_blank">Log in</a></p>
+        </section>
+        
+    </main>
+</body>
+</html>
