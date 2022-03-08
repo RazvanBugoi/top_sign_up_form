@@ -11,17 +11,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <main>
-        <section class="left_column">
-            <div class="image-container">
-                <img class="bg_image" src="/src/bg-image.jpg" alt="ocean picture" max-height: 500px>
-                <div class="logo-bg">
-                    <img src="/src/odin-logo.png" alt="odin logo">
-                </div>
-            </div>
-        </section>
+    <div class="parent">
 
-        <section class="right_column">
+      <!-- Left Section -->
+        <div class="left_column">
+                <img class="bg_image" src="/src/bg-image.jpg" alt="ocean picture">
+                <div class="logo_bg">
+                    <img src="/src/odin-logo.png" alt="odin logo">
+                    <h1>ODIN</h1>
+                </div>
+          <p class="credit">Photo by <a href="#">Stormseeker</a> on <a href="https://unsplash.com/photos/rX12B5uX7QM" target="_blank">Unsplash</a></p>
+        </div>
+
+
+      <!-- Right Section -->
+        <div class="right_column">
             <div class="form-container">
                 <div class="description-container">
                     <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur laborum at modi amet porro nesciunt, saepe praesentium dicta, aspernatur, quisquam nihil a dignissimos qui ea quos ex sunt natus eveniet?</p>
@@ -58,8 +62,8 @@
     
             <button>Create Account</button>
             <p>Already have an account? <a href="https://www.google.com/" target="_blank">Log in</a></p>
-        </section>
+        </div>
         
-    </main>
+    </div>
 </body>
 </html>

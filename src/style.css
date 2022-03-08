@@ -1,11 +1,64 @@
-html {
+body {
     font-family: "Roboto", sans-serif;
+    padding: 0;
+    margin: 0;
 }
 
-main {
-    padding-left: 100px;
-    padding-right: 100px;
-    max-height: 90vh;
-    display: grid;
-    grid-template-columns: 0.75fr 1.25fr;
+.parent { 
+    display: flex;
+    background-color: grey;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.left_column {
+    height: inherit;
+    max-width: 40vw;
+    background-color: green;
+    position: relative;
+}
+
+.right_column {
+    background-color: red;
+}
+
+.bg_image {
+    margin: auto;
+    height: 100%;
+    max-width: 100%;
+}
+
+.logo_bg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    top: 200px;
+    background-color: #0000006b;
+}
+
+.logo_bg img {
+    width: max(50px,75px, 100px);
+}
+
+.logo_bg h1 {
+    color: white;
+    font-size: 80px;
+    font-weight: 900;
+}
+
+.credit {
+    font-family: "Roboto", sans-serif;
+    position: absolute;
+    bottom: 25px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    box-sizing: border-box;
+}
+
+.credit a {
+    color: white;
 }
