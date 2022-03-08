@@ -4,6 +4,26 @@ body {
     margin: 0;
 }
 
+li{
+    list-style-type: none;
+    margin: 15px 10px;
+}
+
+label {
+    display: block;
+}
+
+.input_boxes {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.description_container p {
+    font-size: 25px;
+    letter-spacing: .65px;
+}
+
 .parent { 
     display: flex;
     background-color: grey;
@@ -21,6 +41,12 @@ body {
 
 .right_column {
     background-color: red;
+    margin: auto 50px;
+    padding-right: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
 }
 
 .bg_image {
