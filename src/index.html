@@ -28,12 +28,12 @@
         <div class="right_column">
             <div class="form_container">
                 <div class="description_container">
-                    <p> This is not a real online service!You know you need something like this in your life to help you realize your deepest dreams. <br>Sign up <em>now</em> to get started.</p>
+                    <p> This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. <br>Sign up <em>now</em> to get started.</p>
                     <p> You know you want to.</p>
                 </div>
     
                 <section>
-                    <form action="https://www.google.com/" method="post">
+                    <form action="https://www.google.com/" method="post" novalidate id="form">
                         <section>
                             <h1>Let's do this!!</h1>
 
@@ -51,6 +51,7 @@
                                         <li>
                                             <label for="password">Password</label>
                                             <input type="password" name="password" id="user_password" required>
+                                            <span class="error" aria-live="polite"></span>
 
                                         </li>
                                     </ul>
@@ -71,8 +72,8 @@
                                         <li>
                                             <label for="password_confirmation">Confirm Password</label>
                                             <input type="password" name="password_confirmation" id="user_password_confirmation" required
-                                            oninvalid="this.setCustomValidity('Please Enter valid email')"
-                                            oninput="setCustomValidity('')"></input>>
+                                            oninvalid="this.setCustomValidity('Password do not match')"
+                                            oninput="setCustomValidity('')"></input>
                                         </li>
                                 </ul>
                                 </div>
@@ -90,5 +91,6 @@
         </div>
         
     </div>
+<script src="/src/script.js"></script>
 </body>
 </html>

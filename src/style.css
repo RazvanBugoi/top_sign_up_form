@@ -14,10 +14,13 @@ li{
 }
 
 input {
+    -webkit-appearance: none;
+    appearance: none;
     width: 250px;
     height: 20px;
     border-radius: 2px;
     border-width: 0;
+    box-sizing: border-box;
 }
 
 input:focus-visible {
@@ -25,6 +28,30 @@ input:focus-visible {
     border: 2px;
 }
 
+input:invalid {
+    border-color: #900;
+    background-color: #FDD;
+}
+
+input:focus:invalid {
+    outline: none;
+}
+
+.error {
+    width: 100%;
+    padding: 0;
+    font-size: 90%;
+    color: #f22;
+    border-radius: 0 0 5px 5px;
+    box-sizing: border-box;
+    display: block;
+    height: 20px;
+}
+
+.error.active {
+    padding: 0.3em;
+    display: block;
+}
 
 label {
     display: block;
@@ -116,6 +143,7 @@ form section {
 
 form h1 {
     font-size: 30px;
+    padding-top: 20px;
 }
 
 .description_container p,
@@ -138,9 +166,16 @@ form button {
 
 form section {
     box-shadow: 0px 8px 9px 0px rgb(60 60 60);
+    padding-bottom: 20px;
 }
 
 form ul li {
     padding: 5px 50px 0px 0px;
     margin: 0px 25px 20px 0px;
+}
+
+
+
+input[type=password] {
+
 }
