@@ -150,11 +150,29 @@ form button {
     height: 40px;
     width: 175px;
     border-radius: 5px;
-    background-color: #338ecb;
     border-width: 0;
-    color: #262626;
     font-size: 18px;
     font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+form button:hover {
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+form button:focus {
+    box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 50%);
+}
+
+form p a {
+    text-decoration: none;
+    color: #007bff;
 }
 
 form section {
